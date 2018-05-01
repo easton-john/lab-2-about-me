@@ -24,12 +24,12 @@ such as a short bio, my education, an overview of my job experience, and my goal
         4. If they exhausted all guesses, modify page to show they did not complete
     1. Stretch Goals:
         1. Moar games!
-
 1. HINT: You may need to be careful with JavaScript's casual handling of string to numbers. Validate (check/test) your assumptions.
        
 ### Technical Requirements for "About Me"
 
-- HTML, CSS, and JavaScript must be cleanly written with correct indentation and syntax. Look at examples online and in your textbook. Note that your JS must pass the rules in the linter that we installed.
+- HTML, CSS, and JavaScript must be cleanly written with correct indentation and syntax. Look at examples online and in your textbook. 
+- Note that your JS must pass the rules in the linter that we installed. You need to have the linter running while developing your solution.
 - Your JS file contains a 'use strict' declaration at the top.
 - Guessing game ideas: about you that involves **FIVE** yes/no questions. 
 - Useful and descriptive `console.log()` messages in the JS are well written and correctly displaying to the browser console.
