@@ -13,15 +13,18 @@ such as a short bio, my education, an overview of my job experience, and my goal
     * When the game is complete, modify the page to show success or failure of the game
     * Should work for them click the button to play again
 1. Games
-    * 1) Guess an answer game
+    1. Yes/No game
+        1. Ask a series of five yes/no questions about you.
+        2. Allow: y, yes, Y and YES (hint: use `toUpperCase` or `toLowerCase`) and same for no
+        3. When done with questions, report how they did (either 4/5 or 80%) back to the page
+    1. Guess an answer game
         1. Prompt them with question
         2. If they got it wrong, tell them so, how many guesses left, and maybe a hint. You can use alert, or add to re-prompt
         3. If they got it right, alert them and then modify the page to show the completed successfully
         4. If they exhausted all guesses, modify page to show they did not complete
-    * 2) Yes/No game
-        1. Ask a series of five yes/no questions about you.
-        2. Allow: y, yes, Y and YES (hint: use `toUpperCase` or `toLowerCase`) and same for no
-        3. When done with questions, report how they did (either 4/5 or 80%) back to the page
+    1. Stretch Goals:
+        1. Moar games!
+
 1. HINT: You may need to be careful with JavaScript's casual handling of string to numbers. Validate (check/test) your assumptions.
        
 ### Technical Requirements for "About Me"
