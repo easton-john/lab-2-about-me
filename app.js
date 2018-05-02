@@ -1,10 +1,19 @@
+'use strict';
+
+// function asking users 5 questions and notifying if they were correct or wrong. It also notifies them of their score.
 function fiveQuestions() {
     alert('Welcome to 5 Questions! Reply True or False to the following statements.');
     var score = 0;
     
     var favoriteColor = prompt('My favorite color is red');
+   
+    // while loops makes sure user enters a valid response (t, true, f or false) and then notifies them if they were correct or wrong.
     while(true) {
-        if(favoriteColor.toLowerCase() === 't' || favoriteColor.toLowerCase() === 'true') {
+        if(!favoriteColor) {
+            favoriteColor = prompt('Please type True or False');
+        }
+        
+        else if(favoriteColor.toLowerCase() === 't' || favoriteColor.toLowerCase() === 'true') {
             alert('WRONG!');
             break;
         }
@@ -94,21 +103,16 @@ function fiveQuestions() {
         }
     }
     console.log('user guessed:', brokenBone);
-
+    
+    // users total score
     console.log(score);
 
+    // assigns element with id attribute 'firstGame' to variable and then inserts text content in element
     var gameMessage = document.getElementById('firstGame');
     gameMessage.textContent = 'Thanks for playing! You scored ' + score + ' out of 5.';
-
 }
-    /* while(favoriteColor.toLowerCase() !== 't' || favoriteColor.toLowerCase() !== 'true') {
-        alert('Please type either True or False');
-        favoriteColor = prompt('My favorite color is red');
-        console.log(favoriteColor);
-    
-        console.log('Favorite color red:', favoriteColor)
-     */
 
+// function asking the user a question and allowing them 5 guesses to get it correct 
 function guessingGame() {
     alert('Welcome to the Guessing Game! You have a total of 5 guesses. Good luck!')
 
@@ -116,6 +120,8 @@ function guessingGame() {
     console.log(guess);
 
     for(i = 1; i < 5; i++) {
+        var guessVar = ' guesses'
+
         if(guess.toLowerCase() === 'oahu') {
             console.log(guess);
             alert('CORRECT! Great job!');
@@ -124,16 +130,23 @@ function guessingGame() {
 
         else if(guess.toLowerCase() === 'hawaii') {
             alert('Which island in Hawaii?');
-            guess = prompt('You have ' + (5 - i) + ' guesses left!');
+                if(i === 4) {
+                    guessVar = ' guess'
+                }
+            guess = prompt('You have ' + (5 - i) + guessVar + ' left!');
             console.log(guess);
         } 
 
         else {
-            guess = prompt('Nope, try again! You have ' + (5 - i) + ' guesses left!');
+            if(i === 4) {
+                guessVar = ' guess'
+            }
+            guess = prompt('Nope, try again! You have ' + (5 - i) + guessVar + ' left!');
             console.log(guess);
         }
     }
 
+    // assigns element with id attribute 'secondGame' to variable and then inserts text content in element
     var gameMessageTwo = document.getElementById('secondGame');
     gameMessageTwo.textContent = 'Thanks for playing! Come back soon.'
 }
