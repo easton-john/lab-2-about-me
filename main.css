@@ -2,17 +2,23 @@ body {
     background: whitesmoke;
 }
 
-h1 {
+#title {
     background: steelblue;
     padding: 10px;
     text-align: center;
 }
 
-h2 {
-    background: lightgrey;
-    padding: 10px;
+#tagLine {
+    text-align: center;
 }
-#hobbies {
-    background-color: lightgreen;
-    padding: 5px;
+
+#main {
+    overflow: auto;
 }
+
+.interests {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
