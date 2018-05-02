@@ -1,5 +1,5 @@
 function fiveQuestions() {
-    alert('Welcome to 5 questions! Reply True or False to the following statements.');
+    alert('Welcome to 5 Questions! Reply True or False to the following statements.');
     var score = 0;
     
     var favoriteColor = prompt('My favorite color is red');
