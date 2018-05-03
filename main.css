@@ -20,5 +20,22 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    border-style: solid;
+    background-color: lightblue;
 }
 
+.games {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.gameBorder {
+    border-style: dashed;
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
