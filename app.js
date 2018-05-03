@@ -32,7 +32,11 @@ function fiveQuestions() {
 
     var tattoos = prompt('I have tattoos');
     while(true) {
-        if(tattoos.toLowerCase() === 't' || tattoos.toLowerCase() === 'true') {
+        if(!tattoos) {
+            tattoos = prompt('Please type True or False');
+        }
+
+        else if(tattoos.toLowerCase() === 't' || tattoos.toLowerCase() === 'true') {
             alert('CORRECT!');
             score++;
             break;
@@ -51,7 +55,11 @@ function fiveQuestions() {
 
     var thailandDrunk = prompt('I have been drunk in Thailand');
     while(true) {
-        if(thailandDrunk.toLowerCase() === 't' || thailandDrunk.toLowerCase() === 'true') {
+        if(!thailandDrunk) {
+            thailandDrunk = prompt('Please type True or False');
+        }
+
+        else if(thailandDrunk.toLowerCase() === 't' || thailandDrunk.toLowerCase() === 'true') {
             alert('CORRECT!');
             score++;
             break;
@@ -70,7 +78,11 @@ function fiveQuestions() {
 
     var petLion = prompt('I have pet a lion');
     while(true) {
-        if(petLion.toLowerCase() === 't' || petLion.toLowerCase() === 'true') {
+        if(!petLion) {
+            petLion = prompt('Please type True or False');
+        }   
+        
+        else if(petLion.toLowerCase() === 't' || petLion.toLowerCase() === 'true') {
             alert('WRONG!');
             break;
         }
@@ -88,7 +100,10 @@ function fiveQuestions() {
 
     var brokenBone = prompt('I have broken a bone');
     while(true) {
-        if(brokenBone.toLowerCase() === 't' || brokenBone.toLowerCase() === 'true') {
+        if(!brokenBone) {
+            brokenBone = prompt('Please type True or False');
+        }    
+        else if(brokenBone.toLowerCase() === 't' || brokenBone.toLowerCase() === 'true') {
             alert('WRONG!');
             break;
         }
@@ -120,7 +135,7 @@ function guessingGame() {
     for(var i = 0; i < 5; i++) {
         var guessVar = ' guesses'
         var guess = prompt('What Island have I lived on? You have ' + (5 - i) + guessVar + ' left!');
-
+        
         if(guess.toLowerCase() === 'oahu') {
             console.log(guess);
             alert('CORRECT! Great job!');
